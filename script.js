@@ -112,7 +112,7 @@ let showList = () => {
       .map((list) => {
         return `<li data-key="${list.id}">${list.item}<span>&#10060;</span> </li>`;
       })
-      .join("\n");
+      .join("");
   };
   getReq.onerror = (err) => {
     console.log("Error in request ", err);
